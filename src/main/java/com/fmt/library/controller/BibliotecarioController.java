@@ -73,5 +73,18 @@ public class BibliotecarioController {
         return ResponseEntity.ok(emails);
     }
 
+    @PutMapping("{idBibliotecario}/senha")
+    public ResponseEntity<Void> atualizarSenhaDoBibliotecario(@PathVariable Integer idBibliotecario, @RequestBody String novaSenha) {
+        Optional<Bibliotecario> bibliotecarioOptional = bibliotecarioRepository.findById(idBibliotecario);
+        if (bibliotecarioOptional.isPresent()) {
+            Bibliotecario bibliotecario = bibliotecarioOptional.get();
+            bibliotecario.setSenha(novaSenha);
+            bibliotecarioRepository.save(bibliotecario);
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
 
 }
