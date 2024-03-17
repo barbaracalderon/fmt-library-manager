@@ -32,5 +32,7 @@ build/
 ### VS Code ###
 .vscode/
 
-### Maven ###
+### Maven Project###
 .mvn/
+src/main/resources/
+src/test/
