@@ -67,4 +67,11 @@ public class BibliotecarioController {
         return ResponseEntity.noContent().build();
     }
 
+    @GetMapping("/emails")
+    public ResponseEntity<ArrayList<String>> buscarEmailsDosBibliotecarios() {
+        ArrayList<String> emails = bibliotecarioRepository.buscarEmailsDosBibliotecarios();
+        return ResponseEntity.ok(emails);
+    }
+
+
 }
