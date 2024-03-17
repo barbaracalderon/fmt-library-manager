@@ -21,6 +21,9 @@ public class Emprestimo {
     @JoinColumn(name = "id_membro")
     private Membro membro;
 
+    @Column(nullable = false)
     private Date dataEmprestimo;
+
+    @Column(nullable = false)
     private Date dataDevolucao;
 }
