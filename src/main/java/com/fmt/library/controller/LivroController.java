@@ -67,5 +67,17 @@ public class LivroController {
         return ResponseEntity.noContent().build();
     }
 
+    @GetMapping("/titulos")
+    public ResponseEntity<ArrayList<String>> buscarTitulosDosLivros() {
+        ArrayList<String> titulos = livroRepository.buscarTitulosDosLivros();
+        return ResponseEntity.ok(titulos);
+    }
+
+    @GetMapping("/autores")
+    public ResponseEntity<ArrayList<String>> buscarAutoresDosLivros() {
+        ArrayList<String> autores = livroRepository.buscarAutoresDosLivros();
+        return ResponseEntity.ok(autores);
+    }
+
 
 }
