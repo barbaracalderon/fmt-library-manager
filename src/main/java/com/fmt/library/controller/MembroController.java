@@ -79,6 +79,20 @@ public class MembroController {
         return ResponseEntity.ok(telefones);
     }
 
+    @PutMapping("{idMembro}/telefone")
+    public ResponseEntity<Void> atualizarTelefoneDoMembro(@PathVariable Integer idMembro, @RequestBody String novoTelefone) {
+        Optional<Membro> membroOptional = membroRepository.findById(idMembro);
+        if (membroOptional.isPresent()) {
+            Membro membro = membroOptional.get();
+            membro.setTelefone(novoTelefone);
+            membroRepository.save(membro);
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+
 
 
 }
