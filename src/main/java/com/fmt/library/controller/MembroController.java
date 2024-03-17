@@ -67,7 +67,17 @@ public class MembroController {
         return ResponseEntity.noContent().build();
     }
 
+    @GetMapping("/nomes")
+    public ResponseEntity<ArrayList<String>> buscarNomesDosMembros() {
+        ArrayList<String> nomes = membroRepository.buscarNomesDosMembros();
+        return ResponseEntity.ok(nomes);
+    }
 
+    @GetMapping("/telefones")
+    public ResponseEntity<ArrayList<String>> buscarTelefonesDosMembros() {
+        ArrayList<String> telefones = membroRepository.buscarTelefonesDosMembros();
+        return ResponseEntity.ok(telefones);
+    }
 
 
 
