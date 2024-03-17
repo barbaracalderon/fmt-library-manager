@@ -59,14 +59,20 @@ public class Emprestimo {
         this.dataDevolucao = dataDevolucao;
     }
 
-    public Integer getLivro() {
-        return livro.getId();
+    public Livro getLivro() {
+        return livro;
     }
 
-    public Integer getMembro() {
-        return membro.getId();
+    public void setLivro(Livro livro) {
+        this.livro = livro;
     }
 
+    public Membro getMembro() {
+        return membro;
+    }
 
+    public void setMembro(Membro membro) {
+        this.membro = membro;
+    }
 
 }
