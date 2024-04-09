@@ -1,4 +1,4 @@
-# FMT Tutor Agenda Restful API
+# FMT Library Manager Restful API
 
 Este projeto é uma API RESTful para o gerenciamento de uma biblioteca simples. Utiliza JDK 17 e banco de dados 
 PostgreSQL com o esquema de banco de dados especificado. Esta é uma atividade desenvolvida dentro do módulo de 
