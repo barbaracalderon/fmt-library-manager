@@ -153,4 +153,4 @@ Certifique-se de substituir os valores de exemplo pelos valores reais.
 
 ### Atividade
 
-Esta foi uma atividade da semana 9, execução própria de uma proposta de projeto.
+Esta foi uma atividade desenvolvida individualmente por mim, Barbara Calderon.
