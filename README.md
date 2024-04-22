@@ -1,8 +1,7 @@
-# FMT Library Manager Restful API
+# Library Manager Restful API
 
 Este projeto é uma API RESTful para o gerenciamento de uma biblioteca simples. Utiliza JDK 17 e banco de dados 
-PostgreSQL com o esquema de banco de dados especificado. Esta é uma atividade desenvolvida dentro do módulo de 
-Backend Java, **Lab365**, SENAI - Florianópolis, SC.
+PostgreSQL com o esquema de banco de dados especificado. 
 
 
 ## Autor
